@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Zombz</string>
+    <string name="zombies_name">Nama Zombie</string>
+    <string name="description">Deskripsi</string>
+    <string name="object_received">Pindah Activity</string>
+    <string-array name="data_name">
+        <item>Zombie</item>
+        <item>Flag Zombie</item>
+        <item>BucketHead Zombie</item>
+        <item>Basic Pirate Zombie</item>
+        <item>Newspaper Zombie</item>
+        <item>Snorkel Zombie</item>
+        <item>Rocket Zombie</item>
+        <item>Dancing Zombie</item>
+        <item>Gargantuar</item>
+        <item>Dr. ZOMBOSS</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Zombie ini adalah zombi normal atau zombi biasa, yang pertama muncul di permainan Plants vs. Zombie. Zombie ini yang selalu pertama menyerang di semua level permainan (level Day, Night, Pool, Fog, dan Roof).Toughness (tingkat kekerasan) : low (rendah)</item>
+        <item>Flag Zombie adalah zombi yang membawa bendera saat menyerang tanaman. Zombi ini merupakan tanda dari kemunculan zombi-zombi lainnya dalam jumlah yang banyak.Toughness (tingkat kekerasan) : low (rendah)</item>
+        <item>Buckethead Zombie merupakan zombi yang menyerang tanaman dengan mengenakan ember di kepalanya. Ember tersebut membuat zombi ini menjadi benar-benar kuat. Tanaman membutuhkan waktu yang cukup lama untuk membunuh Buckethead Zombie. Untuk melepaskan ember tersebut dari kepala zombi, kita harus menggunakan tanaman Magnet-shroom. Setelah embernya terlepas, barulah tanaman bisa membunuh Buckethead Zombie dengan cepat.Toughness (tingkat kekerasan) : high (tinggi)</item>
+        <item>Zombie ini adalah zombi normal atau zombi biasa, yang pertama muncul di permainan Plants vs. Zombie. Zombie ini yang selalu pertama menyerang di level permainan Pirate Seas. Toughness (tingkat kekerasan) : low (rendah).</item>
+        <item>Newspaper Zombie merupakan zombi yang menyerang tanaman dengan membawa sebuah koran. Koran tersebut digunakan untuk melindungi zombi dari tembakan tanaman. Namun tanaman hanya perlu menembak selama beberapa kali untuk menghancurkan koran tersebut. Saat masih membawa koran, Newspaper Zombie bergerak dengan kecepatan normal. Namun setelah koran tersebut hancur dan hilang, zombi ini marah dan bergerak dengan cepat.Zombie toughness (tingkat kekerasan zombi) : low (rendah).Newspaper toughness (tingkat kekerasan koran) : low (rendah)</item>
+        <item>Snorkel Zombie merupakan zombi yang bertugas untuk menyerang tanaman yang tertanam di air. Cara menyerang dari zombi ini adalah dengan menyelam di air. Zombi ini menyelam dengan mengenakan alat penyelam yaitu masker, snorkel, dan kaki katak. Snorkel Zombie hanya muncul ke permukaan ketika sedang memakan tanaman. Jadi zombi ini baru bisa ditembak saat memunculkan dirinya (memakan tanaman). Namun ada beberapa jenis tanaman yang bisa menyerang Snorkel Zombie ketika sedang menyelam. Tanaman tersebut adalah Tangle Kelp, tanaman peledak, dan tanaman ketapel. Snorkel Zombie hanya muncul di level permainan yang ada airnya atau kolam, yaitu level Pool dan Fog.Toughness (tingkat kekerasan) : low (rendah)</item>
+        <item>Rocket Zombie adalah zombie yang ditemui di Modern Day. Ia akan mengabaikan semua tanaman non-defensif dan melanjutkan ke rumah pemain, melaju melewati sebagian besar tanaman Anda melalui kekuatan sains dan logika.</item>
+        <item>Dancing Zombie merupakan zombi yang menyerang tanaman dengan melakukan gerakan menari (dance). Namun zombi ini berhenti menari ketika sedang memakan tanaman. Kemudian Dancing Zombie tidak menyerang tanaman sendirian. Dalam menyerang tanaman, zombi ini memunculkan 4 zombi cadangan yang juga merupakan zombi penari. Jadi ada 5 zombi yang menyerang tanaman ketika Dancing Zombie muncul.</item>
+        <item>Gargantuar adalah zombi yang berukuran sangat besar, dan merupakan zombi yang paling besar diantara semua zombi. Zombi ini memiliki tubuh yang kekar. Gargantuar membunuh tanaman dengan cara memukul tanaman. Alat yang digunakan oleh zombi ini untuk memukul tanaman adalah kayu yang berbentuk seperti palu besar. Gargantuar hanya perlu memukul 1 kali tanaman untuk membunuh tanaman tersebut. Gargantuar adalah zombi yang luar biasa kuat. Tanaman sekali serang tidak bisa membunuh zombi ini dengan sekali serangan. Tanaman-tanaman tersebut harus menyerang Gargantuar sebanyak 2 kali untuk membunuhnya. Tanaman yang dimaksud adalah Squash, Jalapeno, Cherry Bomb, dan Cob Cannon. Dalam menyerang tanaman, zombi besar ini menggendong zombi kecil bernama Imp.Toughness (tingkat kekerasan) : extremely high (luar biasa tinggi)</item>
+        <item>Ini dia zombi terakhir di permainan Plants vs. Zombies. Dr. Zomboss adalah zombi pemimpin, ketua, atau bos dari semua zombi. Zombi inilah yang memberikan perintah zombi-zombi lain untuk menyerang rumah dan tanaman. Di dalam menyerang tanaman, Dr. Zomboss mengoperasikan sebuah robot raksasa. Robot tersebut luar biasa kuat. Cara zombi bos ini menyerang tanaman dan rumah adalah dengan mengeluarkan zombi-zombi lain. Selain mengeluarkan zombi, Dr. Zomboss juga membunuh tanaman dengan cara memukul tanaman menggunakan mobil, serta menginjak tanaman. Namun tidak semua jenis zombi dikeluarkan oleh zombi bos ini. Zombi yang tidak dikeluarkan oleh Dr. Zomboss adalah Flag Zombie, Dancing Zombie, Backup Dancer, Ducky Tube Zombie, Snorkel Zombie, Zombie Bobsled Team, Dolphin Rider Zombie, Balloon Zombie, Digger Zombie, dan Zombie Yeti. Zombi bos ini muncul di level permainan Roof pada level 10 (Mode Adventure), dan di level permainan Dr. Zomboss Revenge pada Mode Mini Games.Zombot shell toughness (tingkat kekerasan perlindungan Robot Zombi) : extreme (keras)</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/zombie</item>
+        <item>@drawable/flag_zombie</item>
+        <item>@drawable/ember</item>
+        <item>@drawable/basic_pirate</item>
+        <item>@drawable/wak_labu</item>
+        <item>@drawable/diver_zombie</item>
+        <item>@drawable/rocket_zombie</item>
+        <item>@drawable/emjeh</item>
+        <item>@drawable/gargantuar</item>
+        <item>@drawable/boss</item>
+    </integer-array>
+</resources>
