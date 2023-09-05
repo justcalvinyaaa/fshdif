@@ -3,10 +3,28 @@ package com.dicoding.zombz
 import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parceler
 
 @Parcelize
 data class Zombie(
     val name : String,
     val description : String,
     val photo : Int
-) : Parcelable
+) :Parcelable {
+    constructor(parcel: Parcel) : this(
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readInt()
+    )
+    companion object : Parceler<Zombie> {
+
+        override fun Zombie.write(parcel: Parcel, flags: Int) {
+            parcel.writeString(name)
+            parcel.writeString(description)
+            photo?.let { parcel.writeInt(it) }
+        }
+        override fun create(parcel: Parcel): Zombie {
+            return Zombie(parcel)
+        }
+    }
+}

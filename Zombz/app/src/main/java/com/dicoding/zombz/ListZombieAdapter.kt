@@ -9,37 +9,36 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class ListZombieAdapter(private val listZombie: ArrayList<Zombie>) : RecyclerView.Adapter<ListZombieAdapter.ListViewHolder>(){
-    private lateinit var onItemClickCallback : OnItemClickCallback
+class ListZombieAdapter(private val listZombie: ArrayList<Zombie>) : RecyclerView.Adapter<ListZombieAdapter.ListViewHolder>() {
+    private lateinit var onItemClickCallback : OnItemClickCallBack
 
-    fun setOnItemClickCallback(onItemClickCallback : OnItemClickCallback){
-        this.onItemClickCallback = onItemClickCallback
+    interface OnItemClickCallBack {
+        fun onItemClicked(zombie: Zombie)
     }
+    fun setOnItemClickCallback(onItemClickCallBack: OnItemClickCallBack){
+        this.onItemClickCallback = onItemClickCallBack
+
+    }
+
+    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val itemPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
+        val itemName: TextView = itemView.findViewById(R.id.tv_item_name)
+        val itemDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view : View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_zombie, parent,false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_zombie, parent, false)
         return ListViewHolder(view)
     }
 
-    override fun getItemCount(): Int = listZombie.size
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto : ImageView = itemView.findViewById(R.id.img_item_photo)
-        val tvName : TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvDescription : TextView = itemView.findViewById(R.id.tv_item_description)
-    }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, description, photo) = listZombie[position]
-        holder.imgPhoto.setImageResource(photo)
-        holder.tvName.text = name
-        holder.tvDescription.text = description
+        photo?.let { holder.itemPhoto.setImageResource(it) }
+        holder.itemName.text = name
+        holder.itemDescription.text = description
 
-        holder.itemView.setOnClickListener{
-            val intenDetail_Info =  Intent(holder.itemView.context, Detail_Info::class.java)
-            intenDetail_Info.putExtra("key_zombie",listZombie[holder.adapterPosition])
-            holder.itemView.context.startActivity(intenDetail_Info)}
+        holder.itemView.setOnClickListener{ this.onItemClickCallback.onItemClicked(listZombie[holder.adapterPosition]) }
     }
-
-    interface OnItemClickCallback{
-        fun onItemClick(data : Zombie)
-    }
+    override fun getItemCount(): Int = listZombie.size
 }

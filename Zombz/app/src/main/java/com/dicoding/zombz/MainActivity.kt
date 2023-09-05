@@ -4,13 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.dicoding.zombz.Detail_Info.Companion.EXTRA_ZOMBIE
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var rvZombie: RecyclerView
     private val list = ArrayList<Zombie>()
 
@@ -20,14 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         rvZombie = findViewById(R.id.rv_zombies)
         rvZombie.setHasFixedSize(true)
-
         list.addAll(getListZombies())
-        showRecycleList()
-    }
+        showRecyclerList()
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
-        return super.onCreateOptionsMenu(menu)
     }
 
     private fun getListZombies():ArrayList<Zombie>{
@@ -35,23 +31,23 @@ class MainActivity : AppCompatActivity() {
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val listZombie = ArrayList<Zombie>()
-        for (i in dataName.indices){
-            val zombie = Zombie(dataName[i],dataDescription[i], dataPhoto.getResourceId(i,-1))
+        for (i in dataName.indices) {
+            val zombie = Zombie(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
             listZombie.add(zombie)
         }
         return listZombie
     }
 
 
-    private fun showRecycleList(){
+    private fun showRecyclerList() {
         rvZombie.layoutManager = LinearLayoutManager(this)
         val listZombieAdapter = ListZombieAdapter(list)
         rvZombie.adapter = listZombieAdapter
-
-        listZombieAdapter.setOnItemClickCallback(object : ListZombieAdapter.OnItemClickCallback{
-            override fun onItemClick(zombie: Zombie) {
-                val moveDetail_Info = Intent(this@MainActivity, Detail_Info::class.java)
-                moveDetail_Info.putExtra(Detail_Info,EXTRA_ZOMBIE, zombie)
+        listZombieAdapter.setOnItemClickCallback(object : ListZombieAdapter.OnItemClickCallBack {
+            override fun onItemClicked(zombie: Zombie) {
+                val moveZombieDetail = Intent(this@MainActivity, Detail_Info::class.java)
+                moveZombieDetail.putExtra(Detail_Info.EXTRA_ZOMBIE, zombie)
+                startActivity(moveZombieDetail)
             }
         })
     }
