@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/calvin"
+                android:scaleType="fitXY"
+                android:importantForAccessibility="no" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calvin Yosafath"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yosafatcalvin7@gmail.com"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

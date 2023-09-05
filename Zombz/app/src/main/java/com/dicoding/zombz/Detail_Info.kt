@@ -1,38 +1,35 @@
 package com.dicoding.zombz
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.widget.ImageView
-import com.dicoding.game.ActivityDetailInfoBinding
+import com.dicoding.zombz.Zombie
+import com.dicoding.zombz.databinding.ActivityDetailInfoBinding
 
-class Detail_Info : AppCompatActivity(), View.OnClickListener {
+class Detail_Info : AppCompatActivity(){
 
-    private lateinit var binding:ActivityDetailInfoBinding
-
+    private lateinit var binding: ActivityDetailInfoBinding
     companion object {
-        const val EXTRA_Zombie = "extra_zombie"
+        const val EXTRA_ZOMBIE = "extra_zombie"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityDetailInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val zombie: Zombie? = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra(EXTRA_ZOMBIE, Zombie::class.java)
-        } else {
-            @Suppress("DEPRECATION")
-            intent.getParcelableExtra(EXTRA_ZOMBIE)
-        }
+        val zombie: Zombie? = intent.getParcelableExtra(EXTRA_ZOMBIE)
 
-        binding.titleDetails.text = zombie?.name
-        if (zombie != null) {
-            zombie.photo?.let { binding.imgDetails.setImageResource(it) }
-        }
-        binding.descriptionDetails.text = zombie?.description ?: ""
+        binding.zombTitle.text = zombie?.name
+        zombie?.photo?.let { binding.zombImage.setImageResource(it) }
+        binding.zombDetails.text = zombie?.description ?: ""
+
+
     }
 
-
+   
 }

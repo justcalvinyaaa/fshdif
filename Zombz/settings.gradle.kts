@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Zombz"
+rootProject.name = "Game"
 include(":app")
- 

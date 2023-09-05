@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="@style/SCREEN"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gray"
+        app:titleTextColor="@color/white"
+        android:layout_gravity="end"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageView
+            android:id="@+id/icon_about"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10sp"
+            android:layout_gravity="start"
+            android:src="@drawable/user_icon"
+            android:importantForAccessibility="no" />
+
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_zombies"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/game_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/TEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

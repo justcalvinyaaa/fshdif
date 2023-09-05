@@ -5,11 +5,16 @@ plugins {
 }
 
 android {
-    namespace = "com.dicoding.zombz"
+
+    buildFeatures{
+        viewBinding = true
+    }
+
+    namespace = "com.dicoding.game"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.dicoding.zombz"
+        applicationId = "com.dicoding.game"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -37,7 +42,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")

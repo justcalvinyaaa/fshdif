@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,16 +15,19 @@ import com.dicoding.zombz.Detail_Info.Companion.EXTRA_ZOMBIE
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var rvZombie: RecyclerView
     private val list = ArrayList<Zombie>()
+    private lateinit var pipel: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        pipel = findViewById(R.id.pipel)
         rvZombie = findViewById(R.id.rv_zombies)
         rvZombie.setHasFixedSize(true)
         list.addAll(getListZombies())
         showRecyclerList()
 
+        pipel.setOnClickListener(this)
     }
 
     private fun getListZombies():ArrayList<Zombie>{
@@ -50,5 +54,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(moveZombieDetail)
             }
         })
+    }
+    override fun onClick(view: View?) {
+        when(view?.id){
+            R.id.pipel -> {
+                val intent = Intent(this@MainActivity, Detail_About::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }
