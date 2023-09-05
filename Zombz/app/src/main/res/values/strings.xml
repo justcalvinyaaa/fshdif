@@ -1,42 +1,46 @@
 <resources>
-    <string name="app_name">Zombz</string>
-    <string name="zombies_name">Nama Zombie</string>
+    <string name="app_name">Game</string>
+
+    <string name="game_title">Judul Game</string>
     <string name="description">Deskripsi</string>
-    <string name="object_received">Pindah Activity</string>
-    <string-array name="data_name">
-        <item>Zombie</item>
-        <item>Flag Zombie</item>
-        <item>BucketHead Zombie</item>
-        <item>Basic Pirate Zombie</item>
-        <item>Newspaper Zombie</item>
-        <item>Snorkel Zombie</item>
-        <item>Rocket Zombie</item>
-        <item>Dancing Zombie</item>
-        <item>Gargantuar</item>
-        <item>Dr. ZOMBOSS</item>
+    <string name="csgo_details">Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).</string>
+    <string name="csgo_title">Counter-Strike Global Offensive</string>
+    <string name="cs2_description">Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).</string>
+    <string-array name="game_name">
+        <item>Counter-Strike Global Offensive 2</item>
+        <item>Dota 2</item>
+        <item>Little Nightmares 2</item>
+        <item>Asassins Creed 2</item>
+        <item>Left 4 Dead 2</item>
+        <item>Age Of Empires 2</item>
+        <item>Portal 2</item>
+        <item>Half-life 2</item>
+        <item>Team Fortress 2</item>
+        <item>Payday 2</item>
     </string-array>
-    <string-array name="data_description">
-        <item>Zombie ini adalah zombi normal atau zombi biasa, yang pertama muncul di permainan Plants vs. Zombie. Zombie ini yang selalu pertama menyerang di semua level permainan (level Day, Night, Pool, Fog, dan Roof).Toughness (tingkat kekerasan) : low (rendah)</item>
-        <item>Flag Zombie adalah zombi yang membawa bendera saat menyerang tanaman. Zombi ini merupakan tanda dari kemunculan zombi-zombi lainnya dalam jumlah yang banyak.Toughness (tingkat kekerasan) : low (rendah)</item>
-        <item>Buckethead Zombie merupakan zombi yang menyerang tanaman dengan mengenakan ember di kepalanya. Ember tersebut membuat zombi ini menjadi benar-benar kuat. Tanaman membutuhkan waktu yang cukup lama untuk membunuh Buckethead Zombie. Untuk melepaskan ember tersebut dari kepala zombi, kita harus menggunakan tanaman Magnet-shroom. Setelah embernya terlepas, barulah tanaman bisa membunuh Buckethead Zombie dengan cepat.Toughness (tingkat kekerasan) : high (tinggi)</item>
-        <item>Zombie ini adalah zombi normal atau zombi biasa, yang pertama muncul di permainan Plants vs. Zombie. Zombie ini yang selalu pertama menyerang di level permainan Pirate Seas. Toughness (tingkat kekerasan) : low (rendah).</item>
-        <item>Newspaper Zombie merupakan zombi yang menyerang tanaman dengan membawa sebuah koran. Koran tersebut digunakan untuk melindungi zombi dari tembakan tanaman. Namun tanaman hanya perlu menembak selama beberapa kali untuk menghancurkan koran tersebut. Saat masih membawa koran, Newspaper Zombie bergerak dengan kecepatan normal. Namun setelah koran tersebut hancur dan hilang, zombi ini marah dan bergerak dengan cepat.Zombie toughness (tingkat kekerasan zombi) : low (rendah).Newspaper toughness (tingkat kekerasan koran) : low (rendah)</item>
-        <item>Snorkel Zombie merupakan zombi yang bertugas untuk menyerang tanaman yang tertanam di air. Cara menyerang dari zombi ini adalah dengan menyelam di air. Zombi ini menyelam dengan mengenakan alat penyelam yaitu masker, snorkel, dan kaki katak. Snorkel Zombie hanya muncul ke permukaan ketika sedang memakan tanaman. Jadi zombi ini baru bisa ditembak saat memunculkan dirinya (memakan tanaman). Namun ada beberapa jenis tanaman yang bisa menyerang Snorkel Zombie ketika sedang menyelam. Tanaman tersebut adalah Tangle Kelp, tanaman peledak, dan tanaman ketapel. Snorkel Zombie hanya muncul di level permainan yang ada airnya atau kolam, yaitu level Pool dan Fog.Toughness (tingkat kekerasan) : low (rendah)</item>
-        <item>Rocket Zombie adalah zombie yang ditemui di Modern Day. Ia akan mengabaikan semua tanaman non-defensif dan melanjutkan ke rumah pemain, melaju melewati sebagian besar tanaman Anda melalui kekuatan sains dan logika.</item>
-        <item>Dancing Zombie merupakan zombi yang menyerang tanaman dengan melakukan gerakan menari (dance). Namun zombi ini berhenti menari ketika sedang memakan tanaman. Kemudian Dancing Zombie tidak menyerang tanaman sendirian. Dalam menyerang tanaman, zombi ini memunculkan 4 zombi cadangan yang juga merupakan zombi penari. Jadi ada 5 zombi yang menyerang tanaman ketika Dancing Zombie muncul.</item>
-        <item>Gargantuar adalah zombi yang berukuran sangat besar, dan merupakan zombi yang paling besar diantara semua zombi. Zombi ini memiliki tubuh yang kekar. Gargantuar membunuh tanaman dengan cara memukul tanaman. Alat yang digunakan oleh zombi ini untuk memukul tanaman adalah kayu yang berbentuk seperti palu besar. Gargantuar hanya perlu memukul 1 kali tanaman untuk membunuh tanaman tersebut. Gargantuar adalah zombi yang luar biasa kuat. Tanaman sekali serang tidak bisa membunuh zombi ini dengan sekali serangan. Tanaman-tanaman tersebut harus menyerang Gargantuar sebanyak 2 kali untuk membunuhnya. Tanaman yang dimaksud adalah Squash, Jalapeno, Cherry Bomb, dan Cob Cannon. Dalam menyerang tanaman, zombi besar ini menggendong zombi kecil bernama Imp.Toughness (tingkat kekerasan) : extremely high (luar biasa tinggi)</item>
-        <item>Ini dia zombi terakhir di permainan Plants vs. Zombies. Dr. Zomboss adalah zombi pemimpin, ketua, atau bos dari semua zombi. Zombi inilah yang memberikan perintah zombi-zombi lain untuk menyerang rumah dan tanaman. Di dalam menyerang tanaman, Dr. Zomboss mengoperasikan sebuah robot raksasa. Robot tersebut luar biasa kuat. Cara zombi bos ini menyerang tanaman dan rumah adalah dengan mengeluarkan zombi-zombi lain. Selain mengeluarkan zombi, Dr. Zomboss juga membunuh tanaman dengan cara memukul tanaman menggunakan mobil, serta menginjak tanaman. Namun tidak semua jenis zombi dikeluarkan oleh zombi bos ini. Zombi yang tidak dikeluarkan oleh Dr. Zomboss adalah Flag Zombie, Dancing Zombie, Backup Dancer, Ducky Tube Zombie, Snorkel Zombie, Zombie Bobsled Team, Dolphin Rider Zombie, Balloon Zombie, Digger Zombie, dan Zombie Yeti. Zombi bos ini muncul di level permainan Roof pada level 10 (Mode Adventure), dan di level permainan Dr. Zomboss Revenge pada Mode Mini Games.Zombot shell toughness (tingkat kekerasan perlindungan Robot Zombi) : extreme (keras)</item>
+    <string-array name="game_description">
+        <item>"Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC action game in the world almost immediately after its release in August 1999," said Doug Lombardi at Valve.</item>
+        <item>One Battlefield. Infinite Possibilities. When it comes to diversity of heroes, abilities, and powerful items, Dota boasts an endless array—no two games are the same. Any hero can fill multiple roles, and there an abundance of items to help meet the needs of each game. Dota doesnt provide limitations on how to play, it empowers you to express your own style</item>
+        <item>Return to a world of charming horror in Little Nightmares II, a suspense adventure game in which you play as Mono, a young boy trapped in a world that has been distorted by the humming transmission of a distant tower. With Six, the girl in the yellow raincoat, as his guide, Mono sets out to discover the dark secrets of The Signal Tower. Their journey won’t be easy; Mono and Six will face a host of new threats from the terrible residents of this world. Will you dare to face this collection of new, little nightmares?</item>
+        <item>Assassin’s Creed® 2 is the follow-up to the title that became the fastest-selling new IP in video game history. The highly anticipated title features a new hero, Ezio Auditore da Firenze, a young Italian noble, and a new era, the Renaissance.</item>
+        <item>Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.</item>
+        <item>Age of Empires II: Definitive Edition celebrates the 20th anniversary of one of the most popular strategy games ever, now with stunning 4K Ultra HD graphics, and a fully remastered soundtrack. Age of Empires II: DE features “The Last Khans” with 3 new campaigns and 4 new Civilizations. Frequent updates include events, additional content, new game modes, and enhanced features with the recent addition of Co-Op mode!</item>
+        <item>Portal 2 draws from the award-winning formula of innovative gameplay, story, and music that earned the original Portal over 70 industry accolades and created a cult following.</item>
+        <item>1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. Valve debut title wins more than 50 game-of-the-year awards on its way to being named "Best PC Game Ever" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide.</item>
+        <item>The most highly-rated free game of all time! One of the most popular online action games of all time, Team Fortress 2 delivers constant free updates—new game modes, maps, equipment and, most importantly, hats. Nine distinct classes provide a broad range of tactical abilities and personalities, and lend themselves to a variety of player skills.</item>
+        <item>PAYDAY 2 is an action-packed, four-player co-op shooter that once again lets gamers don the masks of the original PAYDAY crew - Dallas, Hoxton, Wolf and Chains - as they descend on Washington DC for an epic crime spree. The CRIMENET network offers a huge range of dynamic contracts, and players are free to choose anything from small-time convenience store hits or kidnappings, to big league cyber-crime or emptying out major bank vaults for that epic PAYDAY. While in DC, why not participate in the local community, and run a few political errands?</item>
     </string-array>
-    <integer-array name="data_photo">
-        <item>@drawable/zombie</item>
-        <item>@drawable/flag_zombie</item>
-        <item>@drawable/ember</item>
-        <item>@drawable/basic_pirate</item>
-        <item>@drawable/wak_labu</item>
-        <item>@drawable/diver_zombie</item>
-        <item>@drawable/rocket_zombie</item>
-        <item>@drawable/emjeh</item>
-        <item>@drawable/gargantuar</item>
-        <item>@drawable/boss</item>
+    <integer-array name="game_photo">
+        <item>@drawable/cs2_cover</item>
+        <item>@drawable/dota2_cover</item>
+        <item>@drawable/littlenightmare2_cover</item>
+        <item>@drawable/assassinscreed2_cover</item>
+        <item>@drawable/l4d2_cover</item>
+        <item>@drawable/ae2_cover</item>
+        <item>@drawable/portal2_cover</item>
+        <item>@drawable/hl2_cover</item>
+        <item>@drawable/tf2_cover</item>
+        <item>@drawable/payday2_cover</item>
     </integer-array>
+
 </resources>
